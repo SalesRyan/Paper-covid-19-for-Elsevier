@@ -105,7 +105,7 @@ def classification(X, y, k=5, classifier='rf'):
 
       sumAUC.append(roc_auc_score(true, pred))
 
-      print(f'{count}/10 done!')
+      print(f'{count}/{k} done!')
       count += 1
     
     end = time.time()
